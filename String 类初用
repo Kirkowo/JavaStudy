@@ -1,0 +1,40 @@
+import java.util.Iterator;
+import java.util.Scanner;
+
+/**
+ * 检查一个字符串是否为回文 回文:正着念与反着念一样，例如:上海自来水来自海上
+ * 
+ * @author Xiloer
+ *
+ */
+
+public class Test03 {
+	public static void main(String[] args) {
+		/*
+		 * 编写一个回文字符串，然后调用check方法检查 该字符串是否为回文，然后输出检查结果。 若是回文则输出:是回文 否则输出:不是回文
+		 */
+		// String Ada = "上海自来水来自海上";
+		// System.out.println(str.charAt(0));
+		Scanner sc = new Scanner(System.in);
+		System.out.println("请输入文字:");
+		String str = sc.nextLine();
+		StringBuilder sb = new StringBuilder();
+		StringBuilder str1 = sb.reverse();
+		str1.toString();
+		if (str1.equals(sb)) {
+			System.out.println("yes");
+			
+		} else {
+			System.out.println("no");
+		}
+/*		for (int i = 0; i < str.length()/2; i++) {
+			if (str.indexOf(i)==str.indexOf(str.length()-1-i)) {
+				System.out.println("Yes");
+				
+			} else {
+				System.out.println("No"); 
+			}
+			
+		}*/
+	}
+}
